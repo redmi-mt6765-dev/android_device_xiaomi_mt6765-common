@@ -79,5 +79,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6765
 
+# Recovery
+BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
+TARGET_USERIMAGES_USE_EXT4 := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/mt6765-common/BoardConfigVendor.mk
